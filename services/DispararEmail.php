@@ -32,15 +32,15 @@ if (isset($_POST['enviar-form'])){
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'marciochurrasconaoresponda@gmail.com';
-        $mail->Password   = 'jlpdbfejpqfrggwj';
+        $mail->Username   = '######';
+        $mail->Password   = '######';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
         //Recipients
-        $mail->setFrom('marciochurrasconaoresponda@gmail.com', 'Nao Responda - portal web');
-        $mail->addAddress('marciosantoschurrasco@hotmail.com', 'Marcio Churrasco');
-        // $mail->addAddress('cassio_bomfim@hotmail.com', 'Teste');
+        $mail->setFrom('######', 'Nao Responda - portal web');
+        $mail->addAddress('#########', 'Marcio Churrasco');
+        // $mail->addAddress('######', 'Teste');
 
         //Content
         $mail->isHTML(true);
